@@ -8,8 +8,8 @@
 
 //Emportação ES6
 //Import
-import React from 'react';
-import {View,Text,Button,AppRegistry} from 'react-native';
+import React from 'react'; // Importe o componente React do módulo react
+import {View,Text,Button,AppRegistry} from 'react-native'; //Importe os componentes {View,Text,Button,AppRegistry} do módulo react-native 
 
 let gerarnumero = () =>{
   //~Math.floor() -ratorna valor inteiro
@@ -17,6 +17,7 @@ let gerarnumero = () =>{
   alert(Math.floor(Math.random() * 1000));
 }
 
+//App contém os componente que serão mostrados na tela 
 const App = () =>{
   return <View>
     <Text>App Random</Text>
@@ -24,4 +25,5 @@ const App = () =>{
   </View>
 }
 
+//Registra o componente criado
 AppRegistry.registerComponent('AppRadom', () =>{ return App});
